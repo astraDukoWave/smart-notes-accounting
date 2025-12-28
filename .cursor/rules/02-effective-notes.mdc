@@ -1,0 +1,18 @@
+---
+description: Reglas para procesar contenido educativo usando ciencia del aprendizaje
+globs: docs/notes/**/*.md, contracts/notes/**/*.json, contracts/*.ts
+alwaysApply: false
+---
+
+# Science-Based Note Taking (Cornell Method)
+
+Al procesar PDFs o transcripciones de clase para convertirlos en apuntes:
+
+1. **Estructura Cornell Obligatoria:**
+   - **Cues:** Preguntas clave y conceptos disparadores en el margen izquierdo.
+   - **Notes:** Resumen parafraseado (no copy-paste) usando viñetas.
+   - **Summary:** Un párrafo al final que sintetice la idea principal.
+2. **Técnicas Científicas:**
+   - **Paráfrasis:** Escribe como si le explicaras a un compañero.
+   - **Dual Coding:** Sugiere dónde insertar diagramas o tablas (Markdown Tables).
+   - **Spaced Repetition:** Genera 3 preguntas de autoevaluación al final de cada tema para el dashboard de repaso.

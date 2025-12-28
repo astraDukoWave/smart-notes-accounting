@@ -1,0 +1,15 @@
+---
+description: Reglas para mantener la integridad de la estructura Monorepo
+globs: **/*
+alwaysApply: true
+---
+
+# Monorepo Integrity Rules
+
+- **Estructura de Carpetas:**
+  - `/frontend`: Next.js App (Shadcn UI + Tailwind).
+  - `/backend`: Supabase/PostgreSQL logic.
+  - `/contracts`: Definiciones de tipos TypeScript compartidos.
+  - `/specs`: Documentación de iteraciones y diseño técnico.
+- **Imports:** Usa aliases de path (e.g., `@/components/...`) para evitar `../../`.
+- **Consistencia:** No mezclar lógica de backend directamente en componentes de UI. Usar Server Actions según el curso de Scott Moss.
